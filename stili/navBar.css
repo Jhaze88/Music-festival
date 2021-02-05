@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
+
+@font-face {
+    font-family: 'social';
+    
+    src: 
+         url('../font/fontello.woff2'),
+         url('../font/fontello.woff') ,
+         url('../font/fontello.ttf') ,
+         url('../font/fontello.svg') 
+  
+  }
+
+
+body{
+    width: 100%;
+    background: rgb(204,204,204);
+    background: linear-gradient(0deg, rgba(204,204,204,1) 13%, rgba(255,195,35,1) 65%, rgba(255,255,255,0) 90%);
+}
+header{
+   background: rgb(51, 10, 10)
+}
+.logo{
+    width: 170px;
+    height:90px;
+    padding: 10px 0;
+    margin-left: 20px; 
+}
+
+nav{
+    top:0;
+    left: 0;
+    width: 100%;
+    background: rgb(51, 10, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+      
+}
+nav  ul{
+    margin:0;
+    padding: 0; 
+    width: 50%;    
+}
+nav ul li{
+    display: inline-block;
+    text-align: center;
+    margin: 1em;
+    padding:1em;  
+}
+nav ul li a{
+    
+    color: rgb(253, 235, 75);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Monoton', cursive;
+}
+nav a:hover{
+    color: tomato;
+}
+.social{
+     font-family: 'social';
+      margin: auto;
+      padding: 0;
+      list-style: none;
+      
+      color:white;
+      text-decoration: none;
+}
+.social ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.social ul li {
+      background:rgba(51, 10, 10, 0.794) ;
+      text-align: center;
+      line-height: 2em;
+      margin-right: 1em;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 2s transform;
+      width: 4em;
+      height: 4em;
+}
+.social ul li:hover{
+    background-color: teal;
+    transform: rotate(360deg);
+}
+#foto{
+    width: 100vw;
+    height: 100vh;
+}
+.top{
+    position: fixed;
+    right: 3px;
+    bottom: 35px;
+    z-index: 10;
+    padding: 10px;
+    cursor: pointer;
+
+}
+#checkMenu, label{
+    display: none;
+}
+
+label{
+    width: 100%;
+    background: rgba(51, 10, 10) url("../img/menuWhite.png") no-repeat 90% center;
+    height: 8vh;
+    padding-left: 2.5em;
+    font-size: 25px;
+    color: rgb(253, 235, 75);
+    font-family: 'Monoton', cursive;
+}
+@media screen and (max-width: 1024px){
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+        
+        max-height: 0;
+        overflow: hidden;
+        transition: 2s;
+        width: 100%;
+    }
+   
+    nav ul li{
+        width: 100%;       
+    }
+
+    nav ul li a{
+        padding: 0;
+        text-align: left;
+        text-indent: 1em;
+    }
+
+    .social{
+        display: none;
+    }
+    
+    label{
+        display: block;
+        cursor: pointer;
+    }
+    #checkMenu:checked ~ nav ul{
+        max-height: 20em;
+        
+    }
+    label{
+        width: 100%;
+        background: rgba(51, 10, 10) url("../img/menuWhite.png") no-repeat 90% center;
+        height: 8vh;
+        padding-left: 2.5em;
+        font-size: 25px;
+        color: rgb(253, 235, 75);
+        font-family: 'Monoton', cursive;
+    }
+   
+}
+
+
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    .first{
+        width: 100vw;
+        height: 50vh;
+    }
+    #foto{
+        width: 100vw;
+        height: 50vh;
+    }
+    #checkMenu:checked ~ header{
+        display: block;
+    }
+    
+   
+    
+
+    nav .social{
+        display: none;
+    }
+  
+
+} 

@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Music Fest 19/20/21 Giugno 2020</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../stili/navBar.css">
+        <link rel="stylesheet" href="../stili/footer.css">
+        <link rel="stylesheet" href="../stili/info.css">
+        <link rel="stylesheet" href="../artisti/stili/schedaArtista1.css">
+        <script src="../script/buttonTickets.js"></script>
+        <script src="../script/newsLetter.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Anton|Comfortaa|Monoton|Poppins&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo-music-festTR.png" alt="logo" class="logo">
+            <input type="checkbox" id="checkMenu">
+                    <label for="checkMenu" id="hamburger">Menu
+                        <a href="#Home"></a>
+                    </label> 
+            <nav>
+                <ul>
+                    <li><a href="../index.html#Home">Home</a></li>
+                        <li><a href="../index.html#Lineup">Lineup</a></li>
+                        <li><a href="../index.html#Info">Info</a></li>
+                        <li><a href="../index.html#Location">Location</a></li>
+                </ul>
+                    <div class="social">
+                        <ul>
+                            <li onclick="buttonSocialF()">a</li>
+                            <li onclick="buttonSocialT()">b</li>
+                            <li onclick="buttonSocialY()">c</li>
+                            <li onclick="buttonSocialI()">d</li>
+                        </ul>
+                    </div>
+            </nav>
+        </header>
+        <div class="box a"> 
+            <h2>Sfera Ebbasta</h2>
+                        
+                        <p>La nuova Rockstar della musica italiana – come ama definirsi 
+                            Sfera Ebbasta senza troppi giri di parole – approda al Fabrique 
+                            di Milano per la prima delle tre date milanesi, per dovere di 
+                            cronaca tutte sold out.
+                            La trap è ormai sdoganata e, se non bastassero i numeri 
+                            dell’album RockStar, a dimostrarlo è la fotografia del Fabrique 
+                            addobbato a festa per il suo King: ad assistere al suo live c’è 
+                            veramente chiunque, dalla mamma a cui è dichiaratamente 
+                            affezionatissimo agli amici di sempre, a chi la trap la segue da 
+                            anni e a chi l’ha riscoperta ora che è un fenomeno di dimensioni 
+                            bibliche, su cui è ormai impossibile chiudere un occhio.
+                            Eppure, l’atteggiamento di Sfera non è mai cambiato: dall’album XDVR, 
+                            pubblicato sotto l’egida di Roccia Music nel 2015, ai fasti di Rockstar, 
+                            La scaletta di Sfera è invece rapida e ricchissima.</p>
+        </div>
+        <div class="box b">
+            <img src="../img/sfera-ebbasta-scheda.jpg" width="100%" height="400vh">
+        </div>
+        <button type="button" onclick="buttonTicket()">TICKET</button>
+        <footer>
+            <header> 
+                <ul>
+                    <li><a href="../index.html#Home">Home</a></li>
+                    <li><a href="../index.html#Lineup">Lineup</a></li>
+                    <li><a href="../index.html#Info">Info</a></li>
+                    <li><a href="../index.html#Location">Location</a></li>
+                </ul>
+            </header>
+            <div class="social">
+                <ul>
+                    <li onclick="buttonSocialF()">a</li>
+                    <li onclick="buttonSocialT()">b</li>
+                    <li onclick="buttonSocialY()">c</li>
+                    <li onclick="buttonSocialI()">d</li>
+                </ul>
+            </div>
+           <!----> 
+           <img src="../img/music-fest0.png" class="logo2">
+           <div class="firma">&copy;2020 Jhaze Coloma - <a class="popupF" href="#popup">NewsLetter</a></div>
+        </footer>
+        <section id="popup"> 
+            <article> 
+            <div class="flexChildForm">
+                
+                <img src="../img/Newsletter_Banner.jpg" class="imgNews" width="100%">
+                <h4>Iscriviti e ricevi gli aggiornamenti Settimanali delle notizie più importanti</h4>
+                <input type="text" id="login" placeholder="*Inserisci Nome..."><div id="resultL"></div><br>
+                <input type="email" id="email" placeholder="*Inserisci Email..."><div id="resultE"></div>
+                <br>
+                *Acconsento i trattamenti
+                <input type="checkbox" name="checkbox" id="rd1"> 
+                <button type="submit" id="btnNews"><strong>>>Iscriviti<<</strong></button>
+                <a href="#" class="popupChiuso">X</a>
+            </div>
+        </article>
+        </section>
+    </body>
+</html>

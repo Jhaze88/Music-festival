@@ -1,0 +1,74 @@
+
+#location h2{
+    font-size: 60px;
+    border-top: 5px solid rgb(68,68,68);
+    text-align: center;
+    font-family: 'Monoton', cursive;
+}
+#Location h4{
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+#location button{
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    margin-left: 40%;
+    background-color: rgba(0, 0, 0);
+    border: 3px solid white;
+    color: white;
+    font-size: 20px;
+    position: relative;
+    font-family: 'Nanum Gothic', sans-serif;
+    cursor: pointer;
+    top: 30px;
+    
+}
+.cursor{
+    position: relative;
+    margin-right: 10px;
+    
+    color: white;
+}
+.mappa{
+    border: 3px solid white;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2em;
+    background: #000;
+}
+.gps{
+    cursor: pointer;
+}
+@media screen and (max-width:764px){
+    #location button{
+        width: 200px;
+        height: 40px;
+        border-radius: 30px;
+        margin-left: 40%;
+        
+        font-size: 15px;
+        
+        top: 20px;
+        
+    }
+    .cursor{
+        position: relative;
+        margin-right: 10px;
+        width: 20px;
+        color: white;
+    }
+    #location h2{
+        font-size: 45px;
+        
+    }
+    #Location h4{
+        font-size: 20px;
+        
+    }
+    .gps{
+        width: 30px;
+    }
+}
+

@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    display: grid;
+    grid-row-gap:1em;
+    grid-template-columns: .5fr 1fr 1fr ;
+    grid-template-areas: 
+        "testata testata testata  "
+        "titolo titolo titolo"
+        "..metro articoloM"
+        "..treno articoloT"
+        "..bus articoloB"
+        "..macchina articoloA"
+        "foot foot foot ";
+    width: 100%;
+    margin:0 auto;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+header{
+    grid-area: testata;
+
+}
+h1{
+    grid-area: titolo;
+    
+}
+aside{
+    
+    color: red;
+}
+.metro{
+    grid-area: metro;
+    text-align: center;
+    font-size: 20px;
+    padding: 1em;  
+}
+.metro:hover, 
+.treno:hover,
+.bus:hover,
+.auto:hover{
+    border-bottom:3px solid red;
+    transition: 1s;   
+}
+.treno{
+    grid-area: treno;
+    text-align: center;
+    font-size: 20px;
+    padding: 1em;
+}
+.bus{
+    grid-area: bus;
+    text-align: center;
+    font-size: 20px;
+    padding: 1em;
+}
+.auto{
+    grid-area: macchina;
+    text-align: center;
+    font-size: 20px;
+    padding: 1em;
+}
+
+.artM{
+    grid-area:articoloM;     
+}
+.artT{
+    grid-area:articoloT;    
+}
+.artB{
+    grid-area:articoloB;    
+}
+.artA{
+    grid-area:articoloA;   
+}
+
+footer{
+    grid-area: foot;
+}
+@media screen and (max-width:764px){
+    body{
+        display: grid;
+        grid-row-gap:1em;
+        grid-template-columns: .5fr 1fr ;
+        grid-template-areas: 
+            "testata testata"
+            "titolo titolo"
+            "metro articoloM"
+            "treno articoloT"
+            "bus articoloB"
+            "macchina articoloA"
+            "foot foot foot ";
+        width: 100%;
+        margin:0 auto; 
+    }
+}
+

@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Music Fest 19/20/21 Giugno 2020</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../stili/navBar.css">
+        <link rel="stylesheet" href="../stili/footer.css">
+        <link rel="stylesheet" href="../stili/info.css">
+        <link rel="stylesheet" href="../artisti/stili/schedaArtista1.css">
+        <script src="../script/buttonTickets.js"></script>
+        <script src="../script/newsLetter.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Anton|Comfortaa|Monoton|Poppins&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo-music-festTR.png" alt="logo" class="logo">
+            <input type="checkbox" id="checkMenu">
+                    <label for="checkMenu" id="hamburger">Menu
+                        <a href="#Home"></a>
+                    </label> 
+            <nav>
+                <ul>
+                    <li><a href="../index.html#Home">Home</a></li>
+                        <li><a href="../index.html#Lineup">Lineup</a></li>
+                        <li><a href="../index.html#Info">Info</a></li>
+                        <li><a href="../index.html#Location">Location</a></li>
+                </ul>
+                    <div class="social">
+                        <ul>
+                            <li onclick="buttonSocialF()">a</li>
+                            <li onclick="buttonSocialT()">b</li>
+                            <li onclick="buttonSocialY()">c</li>
+                            <li onclick="buttonSocialI()">d</li>
+                        </ul>
+                    </div>
+            </nav>
+        </header>
+        <div class="box a"> 
+            <h2>Justin Bieber</h2>
+                      <p>Bieber ha vinto numerosi premi, inclusi gli American Music Awards 
+                          come "miglior artista dell'anno" nel 2010 e nel 2012. 
+                          È stato nominato ai Grammy Awards nella categoria "miglior 
+                          artista emergente" e "miglior artista pop". È una delle celebrità 
+                          più famose al mondo e nel web, con più di 77 milioni di seguaci su 
+                          Facebook, 107 milioni su Twitter e con più di 130 milioni su Instagram. 
+                          E il suo canale YouTube ha oltre 50 milioni di iscritti e 21 miliardi 
+                          di visualizzazioni. È stato elencato tre volte nella lista delle dieci 
+                          celebrità più potenti da Forbes, nel 2011, 2012 e 2013.
+                          Con un patrimonio di 200 milioni di dollari, è stato l'under 25 più ricco del mondo.
+                          Nel 2016, Bieber è diventato il primo artista a superare i 10 miliardi di visualizzazioni su Vevo.</p>
+        </div>
+        <div class="box b">
+            <img src="../img/Justin-Biber-scheda.jpg" width="100%" height="400vh">
+        </div>
+        <button type="button" onclick="buttonTicket()">TICKET</button>
+        <footer>
+            <header> 
+                <ul>
+                    <li><a href="../index.html#Home">Home</a></li>
+                    <li><a href="../index.html#Lineup">Lineup</a></li>
+                    <li><a href="../index.html#Info">Info</a></li>
+                    <li><a href="../index.html#Location">Location</a></li>
+                </ul>
+            </header>
+            <div class="social">
+                <ul>
+                    <li onclick="buttonSocialF()">a</li>
+                    <li onclick="buttonSocialT()">b</li>
+                    <li onclick="buttonSocialY()">c</li>
+                    <li onclick="buttonSocialI()">d</li>
+                </ul>
+            </div>
+           <!----> 
+           <img src="../img/music-fest0.png" class="logo2">
+           <div class="firma">&copy;2020 Jhaze Coloma - <a class="popupF" href="#popup">NewsLetter</a></div>
+        </footer>
+        <section id="popup"> 
+            <article> 
+            <div class="flexChildForm">
+                
+                <img src="../img/Newsletter_Banner.jpg" class="imgNews" width="100%">
+                <h4>Iscriviti e ricevi gli aggiornamenti Settimanali delle notizie più importanti</h4>
+                <input type="text" id="login" placeholder="*Inserisci Nome..."><div id="resultL"></div><br>
+                <input type="email" id="email" placeholder="*Inserisci Email..."><div id="resultE"></div>
+                <br>
+                *Acconsento i trattamenti
+                <input type="checkbox" name="checkbox" id="rd1"> 
+                <button type="submit" id="btnNews"><strong>>>Iscriviti<<</strong></button>
+                <a href="#" class="popupChiuso">X</a>
+            </div>
+        </article>
+        </section>
+    </body>
+</html>

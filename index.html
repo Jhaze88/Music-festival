@@ -1,0 +1,183 @@
+<html> 
+   
+    <head>
+        <title>Music Fest 19/20/21 Giugno 2020</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script/onePage.js"></script>
+        <script src="script/slideImg.js"></script>
+        <script src="script/newsLetter.js"></script>
+        <script src="script/buttonTickets.js"></script>
+        <script src="script/respond.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stili/navBar.css">
+        <link rel="stylesheet" href="stili/lineupGrid.css">
+        <link rel="stylesheet" href="stili/slideImg.css">
+        <link rel="stylesheet" href="stili/info.css">
+        <link rel="stylesheet" href="stili/footer.css">
+        <link rel="stylesheet" href="stili/location.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Comfortaa|Monoton|Poppins&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="img/logo-music-festTR.png" alt="logo" class="logo">
+        </header>
+            <div>
+                <input type="checkbox" id="checkMenu">
+                    <label for="checkMenu" id="hamburger">Menu
+                        <a href="#Home"></a>
+                    </label> 
+                <nav>
+                    <ul id="topNav">
+                        <li><a href="#Home">Home</a></li>
+                        <li><a  href="#Lineup">Lineup</a></li>
+                        <li><a  href="#Info">Info</a></li>
+                        <li><a  href="#Location">Location</a></li>
+                </ul>
+                    <div class="social">
+                        <ul>
+                            <li onclick="buttonSocialF()">a</li>
+                            <li onclick="buttonSocialT()">b</li>
+                            <li onclick="buttonSocialY()">c</li>
+                            <li onclick="buttonSocialI()">d</li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+    <div id="Home" class="first">
+                <div id="slide">
+                    <div>
+                        <img id="foto" class="mySlides"  src="">
+                        <img class="arrowLeft" src="img/left.png" onclick="indietro(true)">
+                        <img class="arrowRight" src="img/right.png" onclick="avanti(true)">
+                        <div>
+                            <h2 id="textSlide"></h2>
+                        </div>
+                        <div>
+                             <h3 id="textSlideA"></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Lineup" class="second">
+                <h2>Lineup</h2>
+                    <article class="wrapper">
+                        
+                        <div class="box a">
+                            <a title="Scopri di pi&ugrave;" href="artisti/schedaArtista1.html"><img src="https://wallpaperaccess.com/full/309969.jpg" width="100%" height="auto"></a>
+                            <h3>Bruno Mars</h3>
+                            <h4>19-06</h4>
+                            <button class="bt_T" onclick="buttonTicket()">Ticket</button>
+                        </div>
+                    
+                        <div class="box b">
+                            <a title="Scopri di pi&ugrave;" href="artisti/schedaArtista2.html"><img src="https://images.hdqwalls.com/download/katy-perry-2019-4k-new-pg-1920x1080.jpg" width="100%" height="auto"></a>
+                            <h3>Katy Perry</h3>
+                            <h4>19-06</h4>
+                            <button class="bt_T" onclick="buttonTicket()">Ticket</button>
+                        </div>
+                    
+                        <div class="box c">
+                            <a title="Scopri di pi&ugrave;"  href="artisti/schedaArtista3.html"><img src="https://wallsdesk.com/wp-content/uploads/2016/10/Justin-Bieber-Widescreen-.jpg" width="100%" height="auto"></a>
+                            <h3>Justin Bieber</h3>
+                            <h4>19-06</h4>
+                            <button class="bt_T" onclick="buttonTicket()">Ticket</button>
+                        </div>
+                        
+                        <div class="box d">
+                            <a title="Scopri di pi&ugrave;" href="artisti/schedaArtista4.html"><img src="https://i.pinimg.com/originals/10/d6/7e/10d67e7f7db74c063a53c9394c11b01b.jpg" width="100%" height="auto"></a>
+                            <h3>Mr.Rain</h3>
+                            <h4>20-06</h4>
+                            <button class="bt_T" onclick="buttonTicket()">Ticket</button>
+                        </div>
+                    
+                        <div class="box e">
+                            <a title="Scopri di pi&ugrave;" href="artisti/schedaArtista5.html"><img src="https://www.outpump.com/wp-content/uploads/2019/08/fedez-nuovo-album-outpump-1920x1080.jpg" width="100%" height="auto"></a>
+                            <h3>Fedez</h3>
+                            <h4>20-06</h4>
+                            <button class="bt_T" onclick="buttonTicket()">Ticket</button>
+                        </div>
+                    
+                        <div class="box f">
+                            <a title="Scopri di pi&ugrave;" href="artisti/schedaArtista6.html"><img src="https://www.today.it/~media/horizontal-hi/51562557578876/sfera-ebbasta-3.jpg" width="100%" height="auto"></a>
+                            <h3>Sfera Ebbasta</h3>
+                            <h4>20-06</h4>
+                            <button class="bt_T" onclick="buttonTicket()">Ticket</button>
+                        </div>
+                    
+                        <div class="box g">
+                            <a title="Scopri di pi&ugrave;" href="artisti/schedaArtista7.html"><img src="https://images5.alphacoders.com/566/thumb-1920-566863.jpg" width="100%" height="auto"></a>
+                            <h3>Imagine Dragons</h3>
+                            <h4>21-06</h4>
+                            <button class="bt_T" onclick="buttonTicket()">Ticket</button>
+                        </div>
+                    
+                        <div class="box h">
+                            <a title="Scopri di pi&ugrave;" href="artisti/schedaArtista8.html"><img src="https://www.radiogelosa.it/wp-content/uploads/2016/10/Amazing-Maroon-5-Wallpaper.jpg" width="100%" height="auto"></a>
+                            <h3>Maroon 5</h3>
+                            <h4>21-06</h4>
+                            <button class="bt_T" onclick="buttonTicket()">Ticket</button>
+                        </div>
+                    
+                        <div class="box i">
+                            <a title="Scopri di pi&ugrave;" href="artisti/schedaArtista9.html"><img src="https://i.pinimg.com/originals/50/b4/63/50b463d3e3a5ddf27976478f20947161.jpg" width="100%" height="auto"></a>
+                            <h3>Black Pink</h3>
+                            <h4>21-06</h4>
+                            <button class="bt_T" onclick="buttonTicket()">Ticket</button>
+                        </div>
+               </article>
+            </div>
+            <div id="Info" class="third">
+                <h3>Newsletter</h3>
+                <a id="form" href="#popup" class="popupApri"><img src="img/lettera.png" class="busta"></a>
+            </div>
+            <br>
+        <div id="Location" class="fourth">
+            <h2>Location</h2>
+            <h4>Roma-Circo Massimo-00100<img class="gps" src="img/gps.png" onclick="buttonDirection()"></h4>
+            <a href="info-utili.html"><button ><img class="cursor" src="img/cursorWhite1.png">COME ARRIVARE</button></a>
+                <img class="mappa" src="img/mappaok.png">
+            </div>
+            <img src="img/up.png" class="top">
+            <footer>
+                <header> 
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Lineup">Lineup</a></li>
+                        <li><a href="#Info">Info</a></li>
+                        <li><a href="#Location">Location</a></li>
+                </ul>
+            </header>
+            <div id="linkS" class="social">
+                <ul>
+                    <li onclick="buttonSocialF()">a</li>
+                    <li onclick="buttonSocialT()">b</li>
+                    <li onclick="buttonSocialY()">c</li>
+                    <li onclick="buttonSocialI()">d</li>
+                </ul>
+            </div>
+           <img src="img/music-fest0.png" class="logo2">
+           <div class="firma">&copy;2020 Jhaze Coloma - <a class="popupF" href="#popup">NewsLetter</a></div>
+
+        </footer>
+
+        <section id="popup"> 
+            <article> 
+            <div class="flexChildForm">
+                <img src="img/Newsletter_Banner.jpg" class="imgNews" width="100%">
+                <h4>Iscriviti e ricevi gli aggiornamenti Settimanali delle notizie più importanti</h4></h2>
+                <input type="text" id="login" placeholder="*Inserisci Nome..."><div id="resultL"></div><br>
+                <input type="email" id="email" placeholder="*Inserisci Email..."><div id="resultE"></div>
+                <br>
+                *Acconsento i trattamenti
+                <input type="checkbox" name="checkbox" id="rd1"> 
+                <button type="submit" id="btnNews"><strong>>>Iscriviti<<</strong></button>
+                <a href="#" class="popupChiuso">X</a>
+            </div>
+        </article>
+     </section>
+        
+    </body>
+</html>
+

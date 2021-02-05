@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+
+
+.wrapper{
+    display: grid;
+    grid-gap: 1.5em;
+    
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+    grid-template-rows: 1fr 1fr 1fr;
+    
+    grid-template-areas: 
+        "testata testata testata"
+        "mars perry bieber"
+        "data data data"
+        "rain fedez sfera"
+        "dragons maroon5 bpk";
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5em ;
+    
+    overflow-x: hidden;
+}
+.data2{
+    grid-area: data;
+}
+#Lineup h2{
+    grid-area: testata;
+    width: 100%;
+    padding: 1em 0;
+    text-align: center;
+    font-size: 60px;
+    background: rgba(0, 128, 128, 0.123);
+    font-family: 'Monoton', cursive;
+}
+
+.box h3{
+    font-size: 28px;
+    margin: 0 auto;
+    position:relative;
+    top:-50px;
+    color:rgb(0, 0, 0);
+        width: 100%;
+        height: 35px;
+        background-color: rgba(255, 255, 255, 0.479); 
+        font-family: 'Poppins', sans-serif;
+}
+.box h4{
+    font-size: 25px;
+    position: relative;
+    margin-left: 80%;
+    top:-80px;
+    color:rgb(0, 0, 0);
+        
+}
+.bt_t{
+    position: relative;
+    margin-left: 30%;
+    width: 200px;
+    height: 40px;
+    font-size: 22px;
+    cursor: pointer;
+    bottom:45px;
+}
+.bt_T:hover{
+    border: 3px solid tomato;
+}
+.box .a{
+    grid-area: mars;
+     
+}
+box .b{
+    grid-area: perry;    
+}
+box .c{
+    grid-area: bieber;    
+}
+box .d{
+    grid-area: rain;   
+}
+box .e{
+    grid-area: fedez;   
+}
+box .f{
+    grid-area: sfera;   
+}
+box .g{
+    grid-area: dragons;
+   
+}
+box .h{
+    grid-area: maroon5;   
+}
+box .i{
+    grid-area: bpk;   
+}
+.wrapper img{
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.wrapper img:hover{
+    transform: scale(1.1);
+    border: 3px solid #008080;
+}
+@media screen and (max-width:1024px){
+    .box h3{
+        font-size: 20px;
+        margin: 0 ;
+        position:relative;
+        top:-40px; 
+        color:rgb(0, 0, 0);
+        width: 100%;
+        height: 25px;
+        background-color: rgba(255, 255, 255, 0.479);
+    }
+    .box h4{
+        font-size: 18px;
+        position: relative;
+        margin-left: 78%;
+        top:-63px;
+        color:rgb(0, 0, 0);
+            
+    }
+    .bt_t{
+        position: relative;
+        margin-left: 18%;
+        width: 150px;
+        height: 40px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+   
+}
+@media screen and (max-width:764px){
+    .wrapper{  
+    display: grid;
+    grid-gap: 2em;
+    
+    grid-template-columns: 100% ;
+    
+    grid-template-rows: 450px;
+    
+    grid-template-areas: 
+        "testata "
+        "mars"
+        "perry"
+        "bieber"
+        "rain"
+        "fedez"
+        "sfera"
+        "dragons" 
+        "maroon5" 
+        "bpk";
+    width: 100%;
+    margin: 0 auto;
+    padding-right: 1.5em;
+    }
+    .box h3{
+    font-size: 30px;
+    margin: 0 ;
+    position:relative;
+    top:-60px;
+    color:rgb(0, 0, 0);
+    width: 100%;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.479);
+    
+}
+.box h4{
+    font-size: 25px;
+    position: relative;
+    margin-left: 80%;
+    top:-90px;
+    color:rgb(0, 0, 0);
+        
+}
+.bt_t{
+    position: relative;
+    margin-left: 30%;
+    width: 200px;
+    height: 40px;
+    font-size: 22px;
+    cursor: pointer;
+}
+    
+}
+
+
+
+
+
+
+
+
+
+

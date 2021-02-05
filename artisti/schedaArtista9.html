@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>Music Fest 19/20/21 Giugno 2020</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../stili/navBar.css">
+        <link rel="stylesheet" href="../stili/footer.css">
+        <link rel="stylesheet" href="../stili/info.css">
+        <link rel="stylesheet" href="../artisti/stili/schedaArtista1.css">
+        <script src="../script/buttonTickets.js"></script>
+        <script src="../script/newsLetter.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Anton|Comfortaa|Monoton|Poppins&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo-music-festTR.png" alt="logo" class="logo">
+            <input type="checkbox" id="checkMenu">
+                    <label for="checkMenu" id="hamburger">Menu
+                        <a href="#Home"></a>
+                    </label> 
+            <nav>
+                <ul>
+                    <li><a href="../index.html#Home">Home</a></li>
+                        <li><a href="../index.html#Lineup">Lineup</a></li>
+                        <li><a href="../index.html#Info">Info</a></li>
+                        <li><a href="../index.html#Location">Location</a></li>
+                </ul>
+                    <div class="social">
+                        <ul>
+                            <li onclick="buttonSocialF()">a</li>
+                            <li onclick="buttonSocialT()">b</li>
+                            <li onclick="buttonSocialY()">c</li>
+                            <li onclick="buttonSocialI()">d</li>
+                        </ul>
+                    </div>
+            </nav>
+        </header>
+        <div class="box a"> 
+            <h2>Black Pink</h2>
+                        
+                        <p>Costituito nel 2016, il gruppo K-pop - 
+                            composto dai membri Jisoo, Jennie, Rosé e Lisa - 
+                            ha raggiunto un successo da record. L'anno scorso, 
+                            la canzone del quartetto "Ddu-Du Ddu-Du" ha superato 
+                            BTS e Psy per diventare il video musicale coreano più 
+                            visto su YouTube in 24 ore. Pochi mesi dopo, 
+                            l'atto K-pop ha raggiunto un altro traguardo quando la 
+                            stessa canzone è diventata il video musicale coreano più 
+                            veloce del gruppo con 550 milioni di visualizzazioni. 
+                            Oltre alla viralità di "Ddu-Du Ddu-Du", BLACKPINK ha 
+                            raggiunto un nuovo pubblico quando il gruppo ha collaborato 
+                            con Dua Lipa alla canzone bilingue "Kiss and Make Up" lo 
+                            scorso ottobre. La traccia è entrata nella classifica Hot 
+                            100 di Billboard, rendendo il K-pop act l'unico gruppo 
+                            femminile coreano con più voci nella classifica.</p>
+        </div>
+        <div class="box b">
+            <img src="../img/blackpink-scheda.jpg" width="100%" height="400vh">
+        </div>
+        <button type="button" onclick="buttonTicket()">TICKET</button>
+        <footer>
+            <header> 
+                <ul>
+                    <li><a href="../index.html#Home">Home</a></li>
+                    <li><a href="../index.html#Lineup">Lineup</a></li>
+                    <li><a href="../index.html#Info">Info</a></li>
+                    <li><a href="../index.html#Location">Location</a></li>
+                </ul>
+            </header>
+            <div class="social">
+                <ul>
+                    <li onclick="buttonSocialF()">a</li>
+                    <li onclick="buttonSocialT()">b</li>
+                    <li onclick="buttonSocialY()">c</li>
+                    <li onclick="buttonSocialI()">d</li>
+                </ul>
+            </div>
+           <!----> 
+           <img src="../img/music-fest0.png" class="logo2">
+           <div class="firma">&copy;2020 Jhaze Coloma - <a class="popupF" href="#popup">NewsLetter</a></div>
+        </footer>
+        <section id="popup"> 
+            <article> 
+            <div class="flexChildForm">
+                <img src="../img/Newsletter_Banner.jpg" class="imgNews" width="100%">
+                <h4>Iscriviti e ricevi gli aggiornamenti Settimanali delle notizie più importanti</h4>
+                <input type="text" id="login" placeholder="*Inserisci Nome..."><div id="resultL"></div><br>
+                <input type="email" id="email" placeholder="*Inserisci Email..."><div id="resultE"></div>
+                <br>
+                *Acconsento i trattamenti
+                <input type="checkbox" name="checkbox" id="rd1"> 
+                <button type="submit" id="btnNews"><strong>>>Iscriviti<<</strong></button>
+                <a href="#" class="popupChiuso">X</a>
+            </div>
+        </article>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+<html>
+    <head>
+        <title>Music Fest 19/20/21 Giugno 2020</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../stili/navBar.css">
+        <link rel="stylesheet" href="../stili/footer.css">
+        <link rel="stylesheet" href="../stili/info.css">
+        <link rel="stylesheet" href="../artisti/stili/schedaArtista1.css">
+        <script src="script/respond.min.js"></script>
+        <script src="../script/buttonTickets.js"></script>
+        <script src="../script/newsLetter.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Anton|Comfortaa|Monoton|Poppins&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo-music-festTR.png" alt="logo" class="logo">
+            <input type="checkbox" id="checkMenu">
+                    <label for="checkMenu" id="hamburger">Menu
+                        <a href="#Home"></a>
+                    </label> 
+            <nav>
+                <ul>
+                    <li><a href="../index.html#Home">Home</a></li>
+                        <li><a href="../index.html#Lineup">Lineup</a></li>
+                        <li><a href="../index.html#Info">Info</a></li>
+                        <li><a href="../index.html#Location">Location</a></li>
+                </ul>
+                    <div class="social">
+                        <ul>
+                            <li onclick="buttonSocialF()">a</li>
+                            <li onclick="buttonSocialT()">b</li>
+                            <li onclick="buttonSocialY()">c</li>
+                            <li onclick="buttonSocialI()">d</li>
+                        </ul>
+                    </div>
+            </nav>
+        </header>
+        <div class="box a"> 
+            <h2>Bruno Mars</h2>
+                 <p>Bruno Mars, pseudonimo di Peter Gene Hernandez 
+                            (Honolulu, 8 ottobre 1985), è un cantautore e 
+                            produttore discografico statunitense.La sua 
+                            ispirazione musicale è Michael Jackson e molti 
+                            critici lo indicano come suo degno erede, riscontrando 
+                            numerose analogie nel timbro vocale e nella versatilità 
+                            di generi musicali.
+                            Ha scritto hit di successo per artisti come 
+                            Flo Rida o Adam Levine. Raggiunge la notorietà 
+                            nel 2010, prestando la voce a Nothin' on You hit 
+                            del rapper B.o.B e a Billionaire di Travie McCoy. 
+                            Il suo album di debutto, Doo-Wops & Hooligans, 
+                            nel 2010, ha avuto i singoli Just the Way You Are e 
+                            Grenade che hanno entrambi raggiunto la vetta della 
+                            Billboard Hot 100. e sono state rispettivamente la 
+                            prima e la seconda canzone più vendute del 2011, 
+                            e il terzo singolo estratto da. 
+                            Nel corso della sua carriera da cantante, ha venduto oltre 
+                            18 milioni di album e 105 milioni di singoli in tutto il mondo.
+                            Secondo Billboard Mars è stato il dodicesimo più ricco 
+                            musicista del 2014, con un patrimonio di 68.839.681 dollari.
+                        </div>
+        <div class="box b">
+            <img src="../img/bruno-mars-scheda.jpg" max-width="100%" height="400vh">
+        </div>
+        <button type="button" onclick="buttonTicket()">TICKET</button>
+        <footer>
+            <header> 
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#Lineup">Lineup</a></li>
+                    <li><a href="../index.html#Info">Info</a></li>
+                    <li><a href="../index.html#Location">Location</a></li>
+                </ul>
+            </header>
+            <div class="social">
+                <ul>
+                    <li onclick="buttonSocialF()">a</li>
+                    <li onclick="buttonSocialT()">b</li>
+                    <li onclick="buttonSocialY()">c</li>
+                    <li onclick="buttonSocialI()">d</li>
+                </ul>
+            </div>
+           <!----> 
+           <img src="../img/music-fest0.png" class="logo2">
+           <div class="firma">&copy;2020 Jhaze Coloma - <a class="popupF" href="#popup">NewsLetter</a></div>
+        </footer>
+        <section id="popup"> 
+            <article> 
+            <div class="flexChildForm">
+                
+                <img src="../img/Newsletter_Banner.jpg" class="imgNews" width="100%">
+                <h4>Iscriviti e ricevi gli aggiornamenti Settimanali delle notizie più importanti</h4>
+                <input type="text" id="login" placeholder="*Inserisci Nome..."><div id="resultL"></div><br>
+                <input type="email" id="email" placeholder="*Inserisci Email..."><div id="resultE"></div>
+                <br>
+                *Acconsento i trattamenti
+                <input type="checkbox" name="checkbox" id="rd1"> 
+                <button type="submit" id="btnNews"><strong>>>Iscriviti<<</strong></button>
+                <a href="#" class="popupChiuso">X</a>
+            </div>
+        </article>
+        </section>
+    </body>
+</html>

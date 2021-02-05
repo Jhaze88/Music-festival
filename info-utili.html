@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Music Fest 19/20/21 Giugno 2020</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="stili/navBar.css">
+        <link rel="stylesheet" href="stili/info.css">
+        <link rel="stylesheet" href="stili/footer.css">
+        <link rel="stylesheet" href="stili/info-utili.css">
+        <script src="script/newsLetter.js"></script>
+        <script src="script/buttonTickets.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Anton|Comfortaa|Monoton|Poppins&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <img src="img/logo-music-festTR.png" alt="logo" class="logo">
+            <input type="checkbox" id="checkMenu">
+                    <label for="checkMenu" id="hamburger">Menu
+                        <a href="#Home"></a>
+                    </label> 
+                <nav>
+                    <ul id="topNav">
+                        <li><a  href="index.html#Home">Home</a></li>
+                        <li><a  href="index.html#Lineup">Lineup</a></li>
+                        <li><a  href="index.html#Info">Info</a></li>
+                        <li><a  href="index.html#Location">Location</a></li>
+                </ul>
+                    <div class="social">
+                        <ul>
+                            <li onclick="buttonSocialF()">a</li>
+                            <li onclick="buttonSocialT()">b</li>
+                            <li onclick="buttonSocialY()">c</li>
+                            <li onclick="buttonSocialI()">d</li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        <h1>COME ARRIVARE :</h1>
+        <aside class="metro"><h2><img src="img/subway.png" alt="">METRO</h2></aside>
+        <article class="artM">
+             <p> 
+                 Da Termini sarà poi possibile prendere la 
+                 metropolitana linea B e scendere a Colosseo, 
+                 da Piazza Venezia si potrà andare a piedi 
+                 (distanza di circa 1 chilometro). 
+                 Per gli autobus provenienti da fuori Roma il 
+                 capolinea è la Stazione Tiburtina, dalla quale 
+                 si può raggiungere il luogo dell’evento sempre 
+                 in metropolitana.</p>
+        </article>
+        <aside class="treno"><h2><img src="img/train.png" alt="">TRENO</h2></aside>
+        <article class="artT">
+            <br>
+            <br>
+            <br>  
+             <p>Fermata Stazione Roma Ostiense e Roma Termini,
+                 prendere la metro Linea B fermata "Circo Massimo".</p>
+         </article> 
+         <aside class="bus"><h2><img src="img/bus-stop.png" alt="">BUS</h2></aside>
+        <article class="artB"> 
+               <p>I capolinea più vicini per gli autobus interni 
+                    alla città sono Termini e Piazza Venezia. 
+                    Per gli autobus provenienti da fuori Roma il 
+                    capolinea è la Stazione Tiburtina, dalla quale 
+                    si può raggiungere il luogo dell’evento sempre 
+                    in metropolitana.</p>
+        </article>
+        <aside class="auto"><h2><img src="img/car.png" alt="">AUTO</h2></aside>        
+        <article class="artA">      
+              <p>Dalla A1 provenienza Napoli prendere il GRA direzione Fiumicino, 
+                  quindi uscita EUR e proseguire sulla Via Cristoforo Colombo fino 
+                  al Circo Massimo.
+                  Dalla A1 provenienza Firenze prendere il GRA direzione Aeroporti, 
+                  quindi uscita EUR e proseguire sulla Via Cristoforo Colombo fino 
+                  al Circo Massimo.
+                </p>
+                </article>
+        <footer>
+            <header> 
+                <ul>
+                    <li><a href="index.html#Home">Home</a></li>
+                    <li><a href="index.html#Lineup">Lineup</a></li>
+                    <li><a href="index.html#Info">Info</a></li>
+                    <li><a href="index.html#Location">Location</a></li>
+                </ul>
+            </header>
+            <div class="social">
+                <ul>
+                    <li onclick="buttonSocialF()">a</li>
+                    <li onclick="buttonSocialT()">b</li>
+                    <li onclick="buttonSocialY()">c</li>
+                    <li onclick="buttonSocialI()">d</li>
+                </ul>
+            </div>
+           <img src="img/music-fest0.png" class="logo2">
+           <div class="firma">&copy;2020 Jhaze Coloma - <a class="popupF" href="#popup">Newsletter</a></div>
+        </footer>
+        <section id="popup"> 
+            <article> 
+            <div class="flexChildForm">
+                
+                <img src="img/Newsletter_Banner.jpg" class="imgNews" width="100%">
+                <h4>Iscriviti e ricevi gli aggiornamenti Settimanali delle notizie più importanti</h4>
+                <input type="text" id="login" placeholder="*Inserisci Nome..."><div id="resultL"></div><br>
+                <input type="email" id="email" placeholder="*Inserisci Email..."><div id="resultE"></div>
+                <br>
+                *Acconsento i trattamenti
+                <input type="checkbox" name="checkbox" id="rd1"> 
+                <button type="submit" id="btnNews"><strong>>>Iscriviti<<</strong></button>
+                <a href="#" class="popupChiuso">X</a>
+            </div>
+        </article>
+        </section> 
+        
+    </body>
+</html>

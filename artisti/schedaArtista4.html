@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Music Fest 19/20/21 Giugno 2020</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="../stili/navBar.css">
+        <link rel="stylesheet" href="../stili/footer.css">
+        <link rel="stylesheet" href="../stili/info.css">
+        <link rel="stylesheet" href="../artisti/stili/schedaArtista1.css">
+        <script src="../script/buttonTickets.js"></script>
+        <script src="../script/newsLetter.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Anton|Comfortaa|Monoton|Poppins&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <img src="../img/logo-music-festTR.png" alt="logo" class="logo">
+            <input type="checkbox" id="checkMenu">
+                    <label for="checkMenu" id="hamburger">Menu
+                        <a href="#Home"></a>
+                    </label> 
+            <nav>
+                <ul>
+                    <li><a href="../index.html#Home">Home</a></li>
+                        <li><a href="../index.html#Lineup">Lineup</a></li>
+                        <li><a href="../index.html#Info">Info</a></li>
+                        <li><a href="../index.html#Location">Location</a></li>
+                </ul>
+                    <div class="social">
+                        <ul>
+                            <li onclick="buttonSocialF()">a</li>
+                            <li onclick="buttonSocialT()">b</li>
+                            <li onclick="buttonSocialY()">c</li>
+                            <li onclick="buttonSocialI()">d</li>
+                        </ul>
+                    </div>
+            </nav>
+        </header>
+        <div class="box a">
+            <h2>Mr. Rain</h2>
+                        <p>Il vero nome di Mr. Rain è Mattia Belardi. 
+                            Nato a Desenzano, in provincia di Brescia, nel 1991, 
+                            si appassiona alla musica durante gli anni delle superiori. 
+                            Il suo idolo è Eminem, ma partendo dal rapper americano inizia 
+                            oprire tutti i più grandi nomi dell’hip hop sia internazionale 
+                            che nazionale.Nel 2009 comincia a scrivere le sue prime canzoni 
+                            e a utilizzare il suo pseudonimo, Mr. Rain. 
+                            Produce il suo primo mixtape nel 2011, e due anni dopo partecipa 
+                            a X Factor. Inizialmente eliminato ai provini, viene ripescato 
+                            per l’entrata diretta nel programma, ma rifiuta la partecipazione. 
+                            Va in tour per la prima volta nel 2014, esportando la propria 
+                            musica in tutta l’Italia e aprendo i concerti di rapper importanti 
+                            come Salmo, Fedez, Emis Killa, Fabri Fibra, Mondo Marcio, Gemitaiz 
+                            e addirittura maestri del reggae come Toots and the Maytals. 
+                            Il suo primo disco ufficiale, Memories, esce nel maggio 2015, 
+                            totalmente autoprodotto.</p>
+        </div> 
+        <div class="box b">
+            <img src="../img/mr-rain-scheda.jpeg">
+        </div>
+        <button type="button" onclick="buttonTicket()">TICKET</button>
+        <footer>
+            <header> 
+                <ul>
+                    <li><a href="../index.html#Home">Home</a></li>
+                    <li><a href="../index.html#Lineup">Lineup</a></li>
+                    <li><a href="../index.html#Info">Info</a></li>
+                    <li><a href="../index.html#Location">Location</a></li>
+                </ul>
+            </header>
+            <div class="social">
+                <ul>
+                    <li onclick="buttonSocialF()">a</li>
+                    <li onclick="buttonSocialT()">b</li>
+                    <li onclick="buttonSocialY()">c</li>
+                    <li onclick="buttonSocialI()">d</li>
+                </ul>
+            </div>
+           <!----> 
+           <img src="../img/music-fest0.png" class="logo2">
+           <div class="firma">&copy;2020 Jhaze Coloma - <a class="popupF" href="#popup">NewsLetter</a></div>
+        </footer>
+        <section id="popup"> 
+            <article> 
+            <div class="flexChildForm">
+                
+                <img src="../img/Newsletter_Banner.jpg" class="imgNews" width="100%">
+                <h4>Iscriviti e ricevi gli aggiornamenti Settimanali delle notizie più importanti</h4>
+                <input type="text" id="login" placeholder="*Inserisci Nome..."><div id="resultL"></div><br>
+                <input type="email" id="email" placeholder="*Inserisci Email..."><div id="resultE"></div>
+                <br>
+                *Acconsento i trattamenti
+                <input type="checkbox" name="checkbox" id="rd1"> 
+                <button type="submit" id="btnNews"><strong>>>Iscriviti<<</strong></button>
+                <a href="#" class="popupChiuso">X</a>
+            </div>
+        </article>
+        </section>
+    </body>
+</html>
